@@ -50,12 +50,13 @@ section {
 
 /* title */
 .section-devider {
-    width: 500px;
-    height: 3px;
+    width: 100%;
+    height: 2px;
     background-color: darkblue;
     border: none;
     margin: 0 auto 10px auto;
 }
+
 /* about me */
 .about-text {
     text-align: justify;
@@ -98,6 +99,66 @@ section {
     transform: translateY(-50%);
 }
 
+/* skills */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    width: 150px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.progress {
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #e9ecef;
+    flex-grow: 1;
+}
+
+.progress-bar {
+    background-color: darkblue !important;
+    border-radius: 2.5px;
+}
+
+.skill-percent {
+    font-weight: bold;
+    min-width: 40px;
+    text-align: right;
+}
+
+/* contact */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    max-width: 1200px; /* Giới hạn chiều rộng */
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.social-icons a {
+    font-size: 20px;
+    color: #333;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.btn {
+    background-color: darkblue !important;
+}
+.btn-primary:hover {
+    background-color:  blue;
+}
 /* back-to-top button */
 #backToTop {
     display: none;
@@ -115,5 +176,5 @@ section {
     transition: opacity 0.3s ease;
 }
 #backToTop:hover {
-    background-color: #0056b3;
+    background-color: darkblue;
 }
